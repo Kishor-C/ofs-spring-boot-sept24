@@ -1,9 +1,12 @@
-package com.ofs.my_first_app.controller;
+package com.ofs.my_first_app.beans;
+
+import java.time.LocalDate;
 
 public class Profile {
 	private int profileId;
 	private String name;
 	private long phone;
+	private LocalDate dob; 
 	
 	/* Generate setters & getters by Right Click -> Source -> Generate Setters & Getters -> Select all properties */
 	public int getProfileId() {
@@ -23,6 +26,12 @@ public class Profile {
 	}
 	public void setPhone(long phone) {
 		this.phone = phone;
+	}
+	public LocalDate getDob() {
+		return dob;
+	}
+	public void setDob(LocalDate dob) {
+		this.dob = dob;
 	}
 	
 }
